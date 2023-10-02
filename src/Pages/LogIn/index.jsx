@@ -1,21 +1,19 @@
 import Layout from '../../Components/Layout'
 
-function SignIn() {
+function LogIn() {
   return (
     <Layout>
       <h1 className='font-medium text-xl'>Welcome</h1>
       <form action="submit" className='flex flex-col mt-[30px]'>
-        <label htmlFor="">Your Name:</label>
+        <label htmlFor="">Email:</label>
         <input type="text" placeholder='hi@helloword.com' className='border border-l border-black rounded-md px-[20px] mb-[20px] py-[10px]' />
-        <label htmlFor="">Your Email:</label>
+        <label htmlFor="">Password:</label>
         <input type="text" placeholder='Peter' className='border border-l border-black rounded-md px-[20px] mb-[20px] py-[10px]' />
-        <label htmlFor="">Your Password:</label>
-        <input type="text" placeholder='******' className='border border-l border-black rounded-md px-[20px] mb-[20px] py-[10px]' />
-
-        <button className='text-white bg-black py-[10px] rounded-md'>Create</button>
+        <button className='text-white bg-gray-500 py-[10px] rounded-md'>Log in</button>
       </form>
+      <p className='text-sm mt-2 underline cursor-pointer'>Forgot my password</p>
     </Layout>
   )
 }
 
-export default SignIn
+export default LogIn

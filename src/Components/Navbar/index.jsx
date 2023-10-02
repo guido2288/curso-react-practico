@@ -98,9 +98,21 @@ const Navbar = () => {
             My Account
           </NavLink>
         </li>
+
         <li>
           <NavLink
-            to='/sing-in'
+            to='/login'
+            className={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }>
+            Log In
+          </NavLink>
+
+        </li>
+        <li>
+
+          <NavLink
+            to='/sign-in'
             className={({ isActive }) =>
               isActive ? activeStyle : undefined
             }>
